@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTenBanAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Tên bàn ăn"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgBanAn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txtTenBanAn"
+        android:layout_margin="5dp"
+        android:src="@drawable/banan" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goimon"
+        android:layout_below="@id/imgBanAn"
+        android:id="@+id/imgGoiMon"
+        android:layout_margin="5dp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thanhtoan"
+        android:layout_below="@id/imgBanAn"
+        android:layout_toRightOf="@id/imgGoiMon"
+        android:id="@+id/imgThanhToan"
+        android:layout_margin="5dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBanAn"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/imgThanhToan"
+        android:id="@+id/imgAnButton"
+        android:src="@drawable/anbutton"
+        android:visibility="invisible"/>
+</RelativeLayout>
